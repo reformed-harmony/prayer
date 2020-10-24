@@ -7,9 +7,14 @@ TODO
 The application is written in Python 3 and uses the [Django](https://www.djangoproject.com/) web framework. You will need to complete the following steps in order to run the project locally:
 
 1. Ensure that [Python](https://www.python.org/) is installed and use [virtualenv](https://virtualenv.pypa.io/en/latest/) to create a new Python environment
+
 1. Install the required dependencies with:
 
        pip install -r requirements.txt
+
+1. Enable debug mode with:
+
+       set DEBUG=1
 
 1. Initialize the default SQLite database with:
 
