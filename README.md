@@ -15,5 +15,7 @@ DB_HOST | *set to the hostname of the PostgreSQL server* | postgres
 DEBUG | *set to any value to enable debug mode for local development* | *none*
 HECTANE_HOST | *set to the hostname of the Hectane server* | hectane
 SECRET_KEY | *set to a reasonably long string of random ASCII characters* | *blank*
-SITE_NAME | *set to the human-readable name of the website* | "RH Prayer"
+SITE_NAME | *set to the human-readable name of the website* | RH Prayer
 SITE_DOMAIN | *set to the domain name of the website* | prayer.quickmediasolutions.com
+
+Note that **SECRET_KEY** is the only variable that *must* be set.
