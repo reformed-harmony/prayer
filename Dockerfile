@@ -14,18 +14,23 @@ COPY requirements.txt /src/
 # Set the working directory to /src
 WORKDIR /src
 
-# Install packages necessary for building dependencies and install them
+# Install packages needed for building Python dependencies
 RUN \
     apk add --no-cache \
         build-base \
+        jpeg \
+        jpeg-dev \
         libpq \
         postgresql-dev \
-        python3-dev && \
-    pip install -r requirements.txt && \
+        python3-dev \
+        zlib-dev && \
+    pip install --no-cache-dir -r requirements.txt && \
     apk del \
         build-base \
+        jpeg-dev \
         postgresql-dev \
-        python3-dev
+        python3-dev \
+        zlib-dev
 
 # Copy the project files
 COPY . /src/
