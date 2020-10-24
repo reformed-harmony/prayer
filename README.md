@@ -20,6 +20,10 @@ The application is written in Python 3 and uses the [Django](https://www.djangop
 
        python manage.py migrate
 
+1. Create a default admin user with:
+
+       python manage.py createsuperuser
+
 1. Launch the development server with:
 
        python manage.py runserver
