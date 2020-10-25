@@ -111,7 +111,7 @@ else:
 # Media files #
 ###############
 
-MEDIA_ROOT = (DATA_DIR if DEBUG else BASE_DIR) / 'media'
+MEDIA_ROOT = (BASE_DIR if DEBUG else DATA_DIR) / 'media'
 MEDIA_URL = '/media/'
 
 
