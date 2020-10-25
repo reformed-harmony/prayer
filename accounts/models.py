@@ -32,14 +32,3 @@ class User(AbstractUser):
         choices=[(t, t) for t in common_timezones],
         default='UTC',
     )
-
-    def __str__(self):
-        """
-        Display a user's name as neatly as possible
-        """
-        if self.first_name and self.last_name:
-            return "{} {}".format(
-                self.first_name,
-                self.last_name,
-            )
-        return self.username
